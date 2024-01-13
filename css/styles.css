@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.gallery > li > a > img:hover {
+  cursor: url("/img/bxs_hand-down.svg") 44 44, auto;
+}
+
+ul.gallery {
+  list-style: none;
+  padding: 24px 0 24px 0;
+  gap: 24px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: calc(33.33% - 24px);
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
