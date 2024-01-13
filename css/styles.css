@@ -8,7 +8,7 @@ body {
 }
 
 .gallery > li > a > img:hover {
-  cursor: url("/img/bxs_hand-down.svg") 44 44, auto;
+  cursor: url(".img/bxs_hand-down.svg") 44 44, auto;
 }
 
 ul.gallery {
