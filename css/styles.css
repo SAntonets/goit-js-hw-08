@@ -12,6 +12,7 @@ body {
 }
 
 ul.gallery {
+  max-width: 1440px;
   list-style: none;
   padding: 24px 0 24px 0;
   gap: 24px;
@@ -22,17 +23,24 @@ ul.gallery {
 }
 
 .gallery-item {
-  flex-basis: calc(33.33% - 24px);
+  flex-basis: calc(100% / 3 - 24px * 5);
+  height: 200px;
 }
 
 .gallery-link {
   display: block;
   text-decoration: none;
+  max-width: 100%;
+  max-height: 200px;
 }
 
 .gallery-image {
-  height: 100%;
+  max-height: 200px;
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
 }
